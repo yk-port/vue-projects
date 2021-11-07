@@ -2,7 +2,8 @@
   <div id="nav">
     <router-link to="/">Top</router-link> |
     <router-link to="/tab">Tab</router-link> |
-    <router-link to="/modal">Modal</router-link>
+    <router-link to="/modal">Modal</router-link> |
+    <router-link to="/nav">Nav</router-link>
   </div>
   <router-view />
 </template>
@@ -27,5 +28,11 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
 }
 </style>
