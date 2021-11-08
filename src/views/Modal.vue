@@ -6,9 +6,9 @@
       <div v-show="isShow">
         <div class="modal__inner">
           <div class="modal__close" @click="isShow = !isShow">
-            <fa icon="times" />
+            <font-awesome-icon icon="times" />
           </div>
-          <img src="../assets/image001.jpg" />
+          <img src="../assets/modal/image001.jpg" />
         </div>
         <div class="modal__background" @click="isShow = !isShow"></div>
       </div>
@@ -17,7 +17,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, reactive } from "vue";
+import { defineComponent, ref } from "vue";
 
 export default defineComponent({
   setup() {
