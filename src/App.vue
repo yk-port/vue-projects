@@ -3,6 +3,7 @@
     <router-link to="/">Top</router-link> |
     <router-link to="/tab">Tab</router-link> |
     <router-link to="/modal">Modal</router-link> |
+    <router-link to="/carousel">Carousel</router-link> |
     <router-link to="/nav">Nav</router-link>
   </div>
   <router-view />
