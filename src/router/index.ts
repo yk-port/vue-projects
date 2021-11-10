@@ -4,6 +4,7 @@ import Tab from "../views/Tab.vue";
 import Modal from "../views/Modal.vue";
 import Carousel from "../views/Carousel.vue";
 import Nav from "../views/Nav.vue";
+import Search from "../views/Search.vue";
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -30,6 +31,11 @@ const routes: Array<RouteRecordRaw> = [
     path: "/nav",
     name: "Nav",
     component: Nav,
+  },
+  {
+    path: "/search",
+    name: "Search",
+    component: Search,
   },
 ];
 
