@@ -2,7 +2,7 @@
   <div>
     <button @click="isShow = !isShow">画像を見る</button>
 
-    <transition name="fade">
+    <transition name="modal-fade">
       <div v-show="isShow">
         <div class="modal__inner">
           <div class="modal__close" @click="isShow = !isShow">
@@ -69,7 +69,7 @@ export default defineComponent({
   }
 }
 
-.fade {
+.modal-fade {
   &-enter {
     &-from {
       opacity: 0;

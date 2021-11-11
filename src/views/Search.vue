@@ -1,32 +1,34 @@
 <template>
-  <label for="search">SEARCH</label>
-  <input type="search" id="search" v-model="query" />
-  <ul>
-    <li v-for="(todo, index) in filteredTodos" :key="index">
-      {{ todo.item }}
-    </li>
-  </ul>
-
-  <label>POST TODO</label>
-  <input type="text" v-model="newItem" />
-  <button
-    type="submit"
-    @click.prevent="createTodo()"
-    class="button button--submit"
-  >
-    create
-  </button>
-  <ul>
-    <li v-for="(todo, index) in todos" :key="index">
-      <input type="checkbox" v-model="todo.isDone" />
-      <span :class="{ done: todo.isDone }">
+  <div>
+    <label for="search">SEARCH</label>
+    <input type="search" id="search" v-model="query" />
+    <ul>
+      <li v-for="(todo, index) in filteredTodos" :key="index">
         {{ todo.item }}
-      </span>
-      <button @click="deleteTodo(index)" class="button button--delete">
-        delete
-      </button>
-    </li>
-  </ul>
+      </li>
+    </ul>
+
+    <label>POST TODO</label>
+    <input type="text" v-model="newItem" />
+    <button
+      type="submit"
+      @click.prevent="createTodo()"
+      class="button button--submit"
+    >
+      create
+    </button>
+    <ul>
+      <li v-for="(todo, index) in todos" :key="index">
+        <input type="checkbox" v-model="todo.isDone" />
+        <span :class="{ done: todo.isDone }">
+          {{ todo.item }}
+        </span>
+        <button @click="deleteTodo(index)" class="button button--delete">
+          delete
+        </button>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script lang="ts">
